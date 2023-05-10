@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 우선 순위</title>
+    <style>
+        body, div, span {
+            margin: 20px auto;
+        }
+        body {
+            color: blue;
+        }
+        #container {
+            width: 600px;
+            padding: 15px;
+            border: 1px dotted gray;
+            color: blueviolet; 
+        }
+        span {
+            color: brown !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">블록 태그로 한줄을 전체를 차지함</div>
+    <div>블록 태그2</div>
+    <span>||인라인태그로 글자크기만큼만 자리를  차지함||</span>
+    <span>인라인태그2</span>
+</body>
+</html>
