@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        body {
+            background-color: #eee;
+        }
+        section {
+            width: 600px;
+            margin: 20px auto;
+        }
+        p {
+            width: 500px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+        section p {    /*후손*/
+            color: blue;
+        }
+        section > p { /*자식*/
+            color: green;
+        }
+        section > div > p {
+            font-size: small;
+        }
+        h1 + p {   /*인접태그: h1에 인접한 형제 p (바로 밑에 있는 형제만, 밑에 밑에 있는 형제는 x)*/
+            color: plum;
+        }
+        h1 ~ p {    /*h1의 모든 형제들을(p 태그) 선택*/
+            background-color: yellow;
+        }
+        p + p {
+            color: greenyellow;
+        }
+        ul ~ li {
+            list-style: circle;
+        }
+        li {
+            background-color: black;
+            color: white;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>예약방법 & 사용요금</h1>
+        <p>전화로 문의 바랍니다</p>
+        <div>
+            <p>가족실: 60,000원</p>
+            <p>도미토리: 25,000원</p>
+        </div>
+        <h2>입실시간 안내</h2>
+        <p>13시부터 입실 가능</p>
+            <div>
+                <ul>
+                    <li>1차 입실</li>
+                    <li>2차 입실</li>
+                    <li>3차 입실</li>
+                </ul>
+            </div>
+    </section>
+</body>
+</html>

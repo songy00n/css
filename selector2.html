@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+        li {
+            width: 120px;
+            display: inline-block;
+            margin: 10px;
+        }
+        li a {
+            padding: 5px 20px;
+            font-size: 14px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a[href] { /*a 태그에서 href 속성을 가지고 있는 것 선택*/
+            background: yellowgreen;
+            border: 1px solid #ccc;
+            font-weight: normal;
+        }
+        a[target="_blank"] {
+            padding-right: 30px;
+            background: url(light.png) no-repeat center right;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a>메인 메뉴 : </a></li>
+        <li><a href="#">메뉴1</a></li>
+        <li><a href="#">메뉴2</a></li>
+        <li><a href="#">메뉴3</a></li>
+        <li><a href="#">메뉴4</a></li>
+    </ul>
+    <ul>
+        <li><a href="http://html.spec.whatwg.org" target="_blank">HTML</a></li>
+        <li><a href="http://www.w3.org/tr/selectors" target="_blank">Selector Lv3</a></li>
+        <li><a href="http://www.w3.org/tr/css-mediaqueries" target="_blank">Mediaqueries</a></li>
+    </ul>
+</body>
+</html>
