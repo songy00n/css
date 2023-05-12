@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>Transform:translate</title>
+    <style>
+        #container {
+            width: 800px;
+            height: 200px;
+            margin: 20px auto;
+        }
+        .origin {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            float: left;
+            margin: 40px;
+        }
+        .origin > div {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+        #movex:hover {
+            /* transform: translateX(50px); */
+            transform: scaleX(2)
+        }
+        #movey:hover {
+         /* transform: translateX(-50px); */
+            transform: scaleY(1.5);
+            transform: rotate(40deg);
+        }
+        #movexy:hover {
+            transform: scale(0.7);
+            transform: rotate(-40deg);
+           /* transform: translate(50px, 50px); */
+        }
+
+	</style>
+	</head>
+	<body>		
+		<div id="container">
+			<div class="origin">
+				<div  id="movex"></div>		
+			</div>
+			<div class="origin">
+				<div id="movey"></div>	
+			</div>
+			<div class="origin">
+				<div id="movexy"></div>		
+			</div>
+		</div>
+		</div>
+	</body>
+</html>
