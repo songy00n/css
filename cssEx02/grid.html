@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <Style>
+        #container {
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+            grid-gap: 20px 30px; /*컬럼 간격, 줄 간격*/
+            /* grid-template-columns: repeat(auto-fit, 200px); 너비는 고정, 자동으로 개수 지정 */
+            /*grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); auto-fit: 브라우저 크기만큼 다 채움*/
+            /* grid-template-rows: minmax(100px, auto); 줄높이 최소는 100 */
+        }
+        .items {
+            padding:10px;
+            background-color: #eee;
+        }
+        .items:nth-child(odd) {
+            background-color: #bbb;
+        }
+    </Style>
+</head>
+<body>
+    <div id="container">
+        <div class="items">대통령으로 선거될 수 있는 자는 국회의원의 피선거권이 있고 선거일 현재 40세에 달하여야 한다. 타인의 범죄행위로 인하여 생명·신체에 대한 피해를 받은 국민은 법률이 정하는 바에 의하여 국가로부터 구조를 받을 수 있다.</div>
+        <div class="items">대통령으로 선거될 수 있는 자는 국회의원의 피선거권이 있고 선거일 현재 40세에 달하여야 한다. 타인의 범죄행위로 인하여 생명·신체에 대한 피해를 받은 국민은 구조를 받을 수 있다.</div>
+        <div class="items">대통령으로 선거될 수 있는 자는 국회의원의 피선거권이 있고 선거일 현재 40세에 달하여야 한다.</div>
+        <div class="items">대통령으로 선거될 수 있는 자는 국회의원의 피선거권이 있고 선거일 현재 40세에 달하여야 한다. 타인의 범죄행위로 인하여 생명·신체에 대한 피해를 받은 국민은 법률이 정하는 바에 의하여 국가로부터 구조를 받을 수 있다.</div>
+        <div class="items">대통령으로 선거될 수 있는 자는 국회의원의 피선거권이 있고 선거일 현재 40세에 달하여야 한다. 타인의 범죄행위로 인하여 생명·신체에 대한 피해를 받은 국민은 법률이 정하는 바에 의하여 국가로부터 구조를 받을 수 있다.</div>
+        <div class="items">대통령으로 선거될 수 있는 자</div>
+        <div class="items">대통령으로 선거될 수 있는 자</div>
+        <div class="items">대통령으로 선거될 수 있는 자</div>
+        <div class="items">대통령으로 선거될 수 있는 자</div>
+    </div>
+</body>
+</html>
