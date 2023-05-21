@@ -1,4 +1,4 @@
-# CSS
+# CSS3
 <strong>Digital Hanoro CSS3 Course</strong>
 
 CSS3, short for Cascading Style Sheets 3, is the latest version of the CSS specification used for styling and presenting the visual aspects of web pages. It introduces several new features and enhancements compared to its predecessor, CSS2.
